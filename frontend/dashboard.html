@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Refacciones</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+   
+<aside class="menu-lateral">
+    <h2><i class="bi bi-wrench-adjustable"></i> REFACCIONES</h2>
+
+    <nav>
+        <a href="dashboard.html" class="activo">
+            <i class="bi bi-grid"></i> Inicio
+        </a>
+
+        <a href="pages/clientes.html">
+            <i class="bi bi-people"></i> Clientes
+        </a>
+
+        <a href="pages/vehiculos.html">
+            <i class="bi bi-car-front"></i> Vehículos
+        </a>
+
+        <a href="#">
+            <i class="bi bi-box-seam"></i> Refacciones
+        </a>
+
+        <a href="#">
+            <i class="bi bi-tags"></i> Categorías
+        </a>
+
+        <a href="#">
+            <i class="bi bi-clipboard-data"></i> Inventarios
+        </a>
+
+        <a href="#">
+            <i class="bi bi-cart"></i> Ventas
+        </a>
+
+        <a href="#">
+            <i class="bi bi-clipboard-check"></i> Pedidos
+        </a>
+
+        <a href="#">
+            <i class="bi bi-truck"></i> Proveedores
+        </a>
+
+        <a href="#">
+            <i class="bi bi-building"></i> Sucursales
+        </a>
+
+        <a href="#">
+            <i class="bi bi-database"></i> Bases de datos
+        </a>
+
+        <a href="#">
+            <i class="bi bi-activity"></i> Monitoreo
+        </a>
+
+        <a href="#">
+            <i class="bi bi-shield-check"></i> Auditoría
+        </a>
+    </nav>
+</aside>
+
+
+    <main class="contenido">
+
+        <header class="encabezado">
+            <h1>Panel general</h1>
+
+            <select id="sucursal">
+                <option value="todos">Todas las sucursales</option>
+                <option value="1">Villahermosa</option>
+                <option value="2">Teapa</option>
+                <option value="3">Tacotalpa</option>
+            </select>
+        </header>
+
+        <section class="tarjetas">
+
+            <div class="tarjeta">
+                <p>Sucursales</p>
+                <h2>3</h2>
+            </div>
+
+            <div class="tarjeta">
+                <p>Refacciones</p>
+                <h2>5</h2>
+            </div>
+
+            <div class="tarjeta">
+                <p>Clientes</p>
+                <h2>2</h2>
+            </div>
+
+            <div class="tarjeta">
+                <p>Ventas</p>
+                <h2>2</h2>
+            </div>
+
+        </section>
+
+        <section class="panel">
+            <h2>Estado de los nodos</h2>
+
+            <div class="nodo">
+                <div>
+                    <h3>Villahermosa</h3>
+                    <p>Puerto 5433</p>
+                </div>
+                <span>Sin verificar</span>
+            </div>
+
+            <div class="nodo">
+                <div>
+                    <h3>Teapa</h3>
+                    <p>Puerto 5434</p>
+                </div>
+                <span>Sin verificar</span>
+            </div>
+
+            <div class="nodo">
+                <div>
+                    <h3>Tacotalpa</h3>
+                    <p>Puerto 5435</p>
+                </div>
+                <span>Sin verificar</span>
+            </div>
+        </section>
+
+
+<section class="panel catalogo">
+    <h2>Catálogo de refacciones</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Balatas delanteras</td>
+                <td>$850.00</td>
+            </tr>
+            <tr>
+                <td>Filtro de aceite</td>
+                <td>$180.00</td>
+            </tr>
+            <tr>
+                <td>Bujía</td>
+                <td>$120.00</td>
+            </tr>
+            <tr>
+                <td>Amortiguador</td>
+                <td>$1,450.00</td>
+            </tr>
+            <tr>
+                <td>Disco de freno</td>
+                <td>$950.00</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
